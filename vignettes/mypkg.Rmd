@@ -1,0 +1,45 @@
+---
+title: "mypkg"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{mypkg}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(myPackage)
+```
+
+# Introduction
+
+In the beginning there was `S`, before long came `R`. 
+`R` provided an efficient language for statistical programming.
+Amazing
+
+# Colours
+
+Sometimes you want to generate shades of a colour. The `make_shades()` function makes this easy! 
+
+```{r}
+shades <- make_shades("goldenrod", 5)
+```
+
+If you want to see what shades look like you can plot them using `plot_colors()`.
+
+```{r}
+plot_colours(shades)
+```
+
+This function is also useful for viewing an abritrary set of colours. 
+
+```{r}
+plot_colours(sample(colours(), 5))
+```

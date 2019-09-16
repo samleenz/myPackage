@@ -1,0 +1,36 @@
+---
+title: "graphs"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{graphs}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(myPackage)
+library(magrittr)
+
+
+barabasi <- igraph::barabasi.game(50, directed = F)
+```
+
+Tools for working with graphs in `igraph`
+
+## netStats
+
+`netStats()` will provide vertex level information on global network statistics. With a single call we can get a table that gives us an overview of network topology in our graph.
+
+```{r}
+ns <- netStats(barabasi)
+
+ns %>%
+  dplyr::arrange(desc(degree)) %>%
+  head(10)

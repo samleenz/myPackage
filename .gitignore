@@ -1,0 +1,9 @@
+.Rproj.user
+inst/doc
+doc
+Meta
+.Rhistory
+.RData
+myPackage.Rcheck/
+myPackage*.tar.gz
+myPackage*.tgz

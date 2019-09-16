@@ -1,0 +1,11 @@
+^myPackage\.Rproj$
+^\.Rproj\.user$
+^myPackage\.Rcheck$
+^myPackage.*\.tar\.gz$
+^myPackage.*\.tgz$
+^LICENSE\.md$
+^doc$
+^Meta$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

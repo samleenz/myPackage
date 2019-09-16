@@ -1,0 +1,23 @@
+Package: myPackage
+Title: A Package of Sorts
+Version: 0.1.0
+Authors@R: 
+    person(given = "Samuel",
+           family = "Lee",
+           role = c("aut", "cre"),
+           email = "samleenz@me.com",
+           comment = c(ORCID = "0000-0002-6805-4051"))
+Description: There are many packages like this, but this package is my package.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat (>= 2.1.0),
+    knitr,
+    rmarkdown
+Imports: 
+    ggplot2,
+    rlang,
+    igraph
+VignetteBuilder: knitr
